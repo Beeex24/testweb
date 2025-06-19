@@ -11,6 +11,9 @@
     "checkJs": false,
     "noImplicitReturns": false,
     "noImplicitThis": false,
-    "lib": ["DOM", "DOM.Iterable", "ES2022"]
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+    
   }
 }

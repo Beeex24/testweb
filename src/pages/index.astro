@@ -18,8 +18,12 @@ const allPosts = [...posts, ...devicePosts].sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
-import Swiper from "swiper/bundle";
-import "swiper/swiper-bundle.css";
+import { register } from 'swiper/element/bundle';
+import 'swiper/css/bundle';
+
+// Swiperをカスタム要素として登録
+register();
+
 ---
 
 <!doctype html>
