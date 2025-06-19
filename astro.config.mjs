@@ -19,6 +19,9 @@ export default defineConfig({
     esbuild: {
       target: 'es2020'
     }
+    ssr: {
+      noExternal: ['swiper']
+    }
   },
   markdown: {
     // remarkプラグインはimportしたものを配列で指定
