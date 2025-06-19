@@ -15,14 +15,14 @@ export default defineConfig({
     checkJs: false
   },
   // Vite設定でesbuildのターゲットを指定
-  vite: {
-    esbuild: {
+ vite: {
+    build: {
       target: 'es2020'
-    }
+    },
     ssr: {
       noExternal: ['swiper']
     }
-  },
+  }
   markdown: {
     // remarkプラグインはimportしたものを配列で指定
     remarkPlugins: [remarkGfm],
